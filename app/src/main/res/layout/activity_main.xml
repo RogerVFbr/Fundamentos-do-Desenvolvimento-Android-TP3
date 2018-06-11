@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numberDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/number_size"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnAdd5"
+        android:layout_width="@dimen/default_button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_btnAdd5"
+        android:layout_below="@id/numberDisplay"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnDecrease5"
+        android:layout_width="@dimen/default_button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_btnSubtract5"
+        android:layout_toRightOf="@id/btnAdd10"
+        android:layout_below="@id/numberDisplay"/>
+
+    <Button
+        android:id="@+id/btnAdd10"
+        android:layout_width="@dimen/default_button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_btnAdd10"
+        android:layout_below="@id/btnAdd5"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnDecrease10"
+        android:layout_width="@dimen/default_button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_btnSubtract10"
+        android:layout_toRightOf="@id/btnAdd10"
+        android:layout_below="@id/btnDecrease5"/>
+
+</RelativeLayout>

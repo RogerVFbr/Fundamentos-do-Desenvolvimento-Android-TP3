@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fundamentos TP3</string>
+    <string name="caption_btnAdd10">Add 10</string>
+    <string name="caption_btnSubtract10">Subtract 10</string>
+    <string name="caption_btnAdd5">Add 5</string>
+    <string name="caption_btnSubtract5">Subtract 5</string>
+</resources>
